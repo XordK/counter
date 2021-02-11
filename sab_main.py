@@ -10,7 +10,7 @@ while True:
     choice = input("Would you like to add to your counter? \n[Y/N] \n>").lower()
 
     # add to the counter
-    if choice == "y":
+    if choice == "n":
 
         # placeholder
         num = ""
@@ -23,10 +23,10 @@ while True:
 
         # convert number
         num = int(num)
-        count += num
+        count -= num
 
     # don't add to the counter
-    elif choice == "n":
+    elif choice == "y":
 
         #  tells the user that the counter hasn't changed
         print("\nNothing was added to your counter")
